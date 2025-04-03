@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/hablullah/go-sampa"
+	"github.com/loguj/go-sampa"
 )
 
 func main() {

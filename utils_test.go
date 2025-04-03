@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hablullah/go-sampa"
-	"github.com/hablullah/go-sampa/internal/testdata"
+	"github.com/loguj/go-sampa"
+	"github.com/loguj/go-sampa/internal/testdata"
 )
 
 var timeFormat = "2006-01-02 15:04:05 -0700"

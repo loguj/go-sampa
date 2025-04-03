@@ -4,7 +4,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/hablullah/go-sampa"
+	"github.com/loguj/go-sampa"
 )
 
 func calculateSunEvents(location sampa.Location, tz *time.Location) ([]SunData, error) {

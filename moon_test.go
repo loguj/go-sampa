@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hablullah/go-sampa"
-	"github.com/hablullah/go-sampa/internal/testdata"
+	"github.com/loguj/go-sampa"
+	"github.com/loguj/go-sampa/internal/testdata"
 )
 
 func TestGetMoonEvents(t *testing.T) {

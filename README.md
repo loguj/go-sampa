@@ -22,7 +22,7 @@ Go SAMPA is a package for calculating Sun and Moon position. SAMPA itself is acr
 To use this package, make sure your project use Go 1.20 or above, then run the following command via terminal:
 
 ```
-go get -u -v github.com/hablullah/go-sampa
+go get -u -v github.com/loguj/go-sampa
 ```
 
 ## Features
@@ -142,9 +142,9 @@ Since astronomical dusk occured when Sun is 18° below horizons, both calculatio
 Go-Sampa is distributed using [MIT] license.
 
 [doc-pkg-badge]: https://img.shields.io/badge/-pkg.go-007d9c?logo=go&labelColor=gray&logoColor=white
-[doc-pkg-url]: https://pkg.go.dev/github.com/hablullah/go-sampa
+[doc-pkg-url]: https://pkg.go.dev/github.com/loguj/go-sampa
 [doc-godocs-badge]: https://img.shields.io/badge/-godocs-375eab?logo=go&labelColor=gray&logoColor=white
-[doc-godocs-url]: https://godocs.io/github.com/hablullah/go-sampa
+[doc-godocs-url]: https://godocs.io/github.com/loguj/go-sampa
 [spa]: https://midcdmz.nrel.gov/spa/
 [spa-calc]: https://midcdmz.nrel.gov/solpos/spa.html
 [spa-calc-tnd]: https://midcdmz.nrel.gov/apps/spa.pl?syear=2023&smonth=4&sday=22&eyear=2023&emonth=4&eday=22&step=10&stepunit=1&otype=1&hr=1&min=0&sec=16&latitude=59.917&longitude=10.733&timezone=2&elev=0&press=1013.25&temp=10&dut1=0.0&deltat=64.797&azmrot=180&slope=0&refract=0.5667&field=40

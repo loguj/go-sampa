@@ -1,7 +1,10 @@
 package testdata
 
-import "time"
-import "github.com/hablullah/go-sampa"
+import (
+	"time"
+
+	"github.com/loguj/go-sampa"
+)
 
 type CelestialEvent struct {
 	Date    string

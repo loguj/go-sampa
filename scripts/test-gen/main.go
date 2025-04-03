@@ -32,7 +32,7 @@ func genCommonFiles(dstDir string) error {
 	sb := bytes.NewBuffer(nil)
 	sb.WriteString("package testdata\n")
 	sb.WriteString("import \"time\"\n")
-	sb.WriteString("import \"github.com/hablullah/go-sampa\"\n")
+	sb.WriteString("import \"github.com/loguj/go-sampa\"\n")
 
 	// Put struct for celestial events
 	sb.WriteString(`type CelestialEvent struct {

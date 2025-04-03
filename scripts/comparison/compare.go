@@ -6,7 +6,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/hablullah/go-sampa"
+	"github.com/loguj/go-sampa"
 )
 
 func compareSunSchedules(location Location) error {
