@@ -205,6 +205,14 @@ func GetMoonEvents(date time.Time, loc Location, opts *Options, customEvents ...
 	// Change time to 0 LCT
 	dt := time.Date(date.Year(), date.Month(), date.Day(), 0, 0, 0, 0, date.Location())
 
+	if dt.Day() == date.Day()-1 {
+		// DST start date https://go.dev/play/p/DSvar6TLmdo
+		sdst, _ := date.ZoneBounds()
+		if date.Year() == sdst.Year() && date.Month() == sdst.Month() && date.Day() == sdst.Day() {
+			dt = sdst
+		}
+	}
+
 	// Set TT to zero
 	ttZero := *opts
 	ttZero.DeltaT = 0

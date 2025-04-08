@@ -46,9 +46,16 @@ func polynomial(x float64, values ...float64) float64 {
 }
 
 func dayFractionToTime(dt time.Time, f float64) time.Time {
-	dt = time.Date(dt.Year(), dt.Month(), dt.Day(), 0, 0, 0, 0, dt.Location())
+	mt := time.Date(dt.Year(), dt.Month(), dt.Day(), 0, 0, 0, 0, dt.Location())
+	if mt.Day() == dt.Day()-1 {
+		// DST start date
+		st, _ := dt.ZoneBounds()
+		if dt.Year() == st.Year() && dt.Month() == st.Month() && dt.Day() == st.Day() {
+			mt = st
+		}
+	}
 	seconds := time.Duration(math.Round(f*24*60*60)) * time.Second
-	return dt.Add(seconds)
+	return mt.Add(seconds)
 }
 
 func fractionDiff(f1, f2 float64) int {
